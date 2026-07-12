@@ -456,6 +456,8 @@
     .brand { font-size: 22px; gap: 8px; }
     .brand-logo { width: 36px; height: 36px; }
     .nav { height: 56px; }
+    .nav-right a:not(.btn-buy) { display: none; }
+    .nav-right .btn { width: auto; max-width: none; }
     .offer-grid { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr; }
     .hero-btns { flex-direction: column; align-items: center; }
@@ -517,7 +519,7 @@
 <!-- VIDEO: YouTube demo -->
 <section style="padding: 0 0 60px;">
   <div class="wrap">
-    <a href="https://youtu.be/_XHSqOdAGbc" target="_blank" rel="noopener" style="display: block; position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line);">
+    <a href="https://youtu.be/_XHSqOdAGbc" target="_blank" rel="noopener" aria-label="Watch the AI Pulse demo video on YouTube" style="display: block; position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line);">
       <div style="position: relative; padding-bottom: 56.25%; height: 0; background: #000;">
         <img src="https://img.youtube.com/vi/_XHSqOdAGbc/maxresdefault.jpg" alt="Watch AI Pulse demo video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 72px; height: 72px; background: rgba(255,91,31,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
@@ -621,6 +623,8 @@
       </div>
     </div>
   </div>
+</section>
+</section>
 </section>
 
 <!-- CTA -->

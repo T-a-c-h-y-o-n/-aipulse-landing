@@ -49,13 +49,15 @@
   a:hover { text-decoration: underline; }
   header { position: sticky; top: 0; z-index: 50; background: rgba(12,13,16,.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
   body.light header { background: rgba(245,245,244,.9); }
-  .nav { display: flex; align-items: center; justify-content: space-between; height: 50px; }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 56px; }
   .brand { font-weight: 800; font-size: 24px; }
   .nav-right { display: flex; align-items: center; gap: 16px; }
   .nav-right a { color: var(--ink-2); font-size: 14px; }
   .nav-right a:hover { color: var(--accent); text-decoration: none; }
-  .btn { display: inline-block; font-weight: 700; font-size: 14px; padding: 10px 20px; border-radius: var(--radius-sm); background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0c0d10; border: none; cursor: pointer; font-weight: 800; }
-  .btn:hover { text-decoration: none; color: #fff; background: #e04500; }
+  .btn { display: inline-block; font-weight: 700; font-size: 14px; padding: 10px 20px; border-radius: var(--radius-sm); background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; border: none; cursor: pointer; box-shadow: 0 4px 14px rgba(255,91,31,.3); }
+  .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(255,91,31,.4); text-decoration: none; }
+  .btn-buy { color: #0c0d10; font-weight: 800; background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+  .btn-buy:hover { color: #fff; }
   article { padding: 60px 0 80px; }
   article h1 { font-size: clamp(28px, 4vw, 42px); line-height: 1.15; margin-bottom: 16px; }
   article h2 { font-size: 26px; margin: 40px 0 16px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
@@ -85,7 +87,7 @@
       <a href="/#pricing">Pricing</a>
       <a href="/#faq">FAQ</a>
       <a href="/blog/" style="color: var(--accent);">Blog</a>
-      <a class="btn" href="https://tachyon80.gumroad.com/l/aipulse-personal" target="_blank">Get it — $29</a>
+      <a class="btn btn-buy" href="https://tachyon80.gumroad.com/l/aipulse-personal" target="_blank">Get it — $29</a>
     </div>
   </div>
 </header>
